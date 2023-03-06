@@ -1,6 +1,20 @@
+# Project generated files
 /extracted/
 /WhatsApp.apk
 /PatchedWhatsApp.apk
+
+# Github files
 /.github/
+
+# Unit test
 /.pytest_cache/
+
+# Environments
 /venv/
+/.venv/
+/venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
