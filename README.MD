@@ -2,6 +2,7 @@
 
 WhatsApp patcher is a program that patches WhatsApp apk.
 
+
 ## Features
 |            Feature             | Availability |
 |:------------------------------:|:------------:|
@@ -11,24 +12,45 @@ WhatsApp patcher is a program that patches WhatsApp apk.
 |     Disable read receipts      |      ✔       |
 | Option to save view once media |      ✔       |
 
+
 ## Requirements
 1. Python3
-2. Java installed
+2. Java 8 or higher
+
 
 ## Installation
 
-```bash
-git clone https://github.com/Schwartzblat/WhatsAppPatcher.git
-```
-Requirements installation:
-```bash
-pip install -r requirements.txt
-```
-## Usage
+Clone the repository:
 
 ```bash
-python whatsapp_patcher/main.py -p ./WhatsApp.apk -o PatchedWhatsApp.apk
+> git clone https://github.com/Schwartzblat/WhatsAppPatcher.git
 ```
+
+Requirements installation:
+
+```bash
+> pip install -r requirements.txt
+```
+
+
+## Usage
+
+Run the program with the following command:
+
+```bash
+> python -m whatsapp_patcher.main [-p /path/to/input.apk] [-o /path/to/output.apk]
+```
+
+Where:
+- `-p` is the input apk path, it may point to a whatsapp apk or `latest` to download the latest version automatically.
+- `-o` is the output apk path.
+
+## Example
+
+```bash
+> python -m whatsapp_patcher.main -p latest -o patched.apk
+```
+
 
 ## Contributing
 
